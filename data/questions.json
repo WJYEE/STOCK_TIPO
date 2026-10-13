@@ -1,0 +1,434 @@
+[
+  {
+    "id": 1,
+    "title": "카페에서 결제할 때, 나는?",
+    "scene": "assets/scenes/q01_cafe.png",
+    "actor": "cat",
+    "options": [
+      {
+        "id": "A",
+        "text": "텀블러·쿠폰 할인부터 확인",
+        "scores": {
+          "hamster": 2
+        }
+      },
+      {
+        "id": "B",
+        "text": "저장해 둔 간편결제로 한 번에",
+        "scores": {
+          "cat": 2
+        }
+      },
+      {
+        "id": "C",
+        "text": "스탬프·포인트 적립부터 챙긴다",
+        "scores": {
+          "rabbit": 2
+        }
+      },
+      {
+        "id": "D",
+        "text": "늘 가던 곳, 늘 쓰던 카드로",
+        "scores": {
+          "bear": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "온라인 쇼핑 중 결제 직전이다!",
+    "scene": "assets/scenes/q02_online_shopping.png",
+    "actor": "hamster",
+    "options": [
+      {
+        "id": "A",
+        "text": "쿠폰·즉시할인을 최대한 찾는다",
+        "scores": {
+          "hamster": 2
+        }
+      },
+      {
+        "id": "B",
+        "text": "이번 달 쇼핑 예산이 남았는지 확인",
+        "scores": {
+          "penguin": 2
+        }
+      },
+      {
+        "id": "C",
+        "text": "저장된 정보로 원클릭 결제",
+        "scores": {
+          "cat": 2
+        }
+      },
+      {
+        "id": "D",
+        "text": "믿을 만한 쇼핑몰인지 후기·보안 확인",
+        "scores": {
+          "bear": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "여행을 떠나기 전 결제 준비!",
+    "scene": "assets/scenes/q03_travel.png",
+    "actor": "fox",
+    "options": [
+      {
+        "id": "A",
+        "text": "해외결제 혜택 카드를 비교해 고른다",
+        "scores": {
+          "fox": 2
+        }
+      },
+      {
+        "id": "B",
+        "text": "하루 예산을 정해 환전·한도 설정",
+        "scores": {
+          "penguin": 2
+        }
+      },
+      {
+        "id": "C",
+        "text": "마일리지가 쌓이는 카드로 준비",
+        "scores": {
+          "rabbit": 2
+        }
+      },
+      {
+        "id": "D",
+        "text": "분실·도난 대비 보안 설정부터",
+        "scores": {
+          "bear": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "배달 음식을 주문할 때!",
+    "scene": "assets/scenes/q04_food_delivery.png",
+    "actor": "bear",
+    "options": [
+      {
+        "id": "A",
+        "text": "쿠폰과 카드 할인을 최적으로 조합",
+        "scores": {
+          "fox": 2
+        }
+      },
+      {
+        "id": "B",
+        "text": "저장된 주소·결제로 빠르게 주문",
+        "scores": {
+          "cat": 2
+        }
+      },
+      {
+        "id": "C",
+        "text": "적립이 가장 많은 앱으로 주문",
+        "scores": {
+          "rabbit": 2
+        }
+      },
+      {
+        "id": "D",
+        "text": "믿고 먹는 단골 가게, 늘 쓰던 방식으로",
+        "scores": {
+          "bear": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "편의점에서 결제하는 순간!",
+    "scene": "assets/scenes/q05_convenience.png",
+    "actor": "penguin",
+    "options": [
+      {
+        "id": "A",
+        "text": "바로 깎이는 할인 카드부터 꺼낸다",
+        "scores": {
+          "hamster": 2
+        }
+      },
+      {
+        "id": "B",
+        "text": "소액이라도 지출 앱에 바로 기록",
+        "scores": {
+          "penguin": 2
+        }
+      },
+      {
+        "id": "C",
+        "text": "폰을 태그하고 후딱 끝낸다",
+        "scores": {
+          "cat": 2
+        }
+      },
+      {
+        "id": "D",
+        "text": "멤버십 포인트 적립 먼저 찍는다",
+        "scores": {
+          "rabbit": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "구독 서비스 결제일이 다가온다!",
+    "scene": "assets/scenes/q06_subscriptions.png",
+    "actor": "rabbit",
+    "options": [
+      {
+        "id": "A",
+        "text": "결합·제휴 할인 요금제로 갈아탄다",
+        "scores": {
+          "fox": 2
+        }
+      },
+      {
+        "id": "B",
+        "text": "첫 달 할인·무료 체험부터 챙긴다",
+        "scores": {
+          "hamster": 2
+        }
+      },
+      {
+        "id": "C",
+        "text": "귀찮으니 자동결제 그대로 둔다",
+        "scores": {
+          "cat": 2
+        }
+      },
+      {
+        "id": "D",
+        "text": "구독료도 포인트 적립 카드로 결제",
+        "scores": {
+          "rabbit": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "큰 금액을 결제해야 한다!",
+    "scene": "assets/scenes/q07_large_purchase.png",
+    "actor": "cat",
+    "options": [
+      {
+        "id": "A",
+        "text": "무이자 할부·청구할인을 비교한다",
+        "scores": {
+          "fox": 2
+        }
+      },
+      {
+        "id": "B",
+        "text": "할부 개월과 월 부담액부터 계산",
+        "scores": {
+          "penguin": 2
+        }
+      },
+      {
+        "id": "C",
+        "text": "복잡한 건 싫어, 한 번에 결제",
+        "scores": {
+          "cat": 2
+        }
+      },
+      {
+        "id": "D",
+        "text": "결제 보호가 되는 안전한 수단으로",
+        "scores": {
+          "bear": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "포인트·마일리지를 쓸 시간!",
+    "scene": "assets/scenes/q08_points_miles.png",
+    "actor": "rabbit",
+    "options": [
+      {
+        "id": "A",
+        "text": "전환 비율이 가장 좋은 곳을 찾아 쓴다",
+        "scores": {
+          "fox": 2
+        }
+      },
+      {
+        "id": "B",
+        "text": "포인트를 바로 현금성 할인에 쓴다",
+        "scores": {
+          "hamster": 2
+        }
+      },
+      {
+        "id": "C",
+        "text": "소멸 전까지 사용 계획을 세운다",
+        "scores": {
+          "penguin": 2
+        }
+      },
+      {
+        "id": "D",
+        "text": "쌓인 포인트를 보는 것만으로 행복",
+        "scores": {
+          "rabbit": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "이번 달 카드값 청구서가 도착했다!",
+    "scene": "assets/scenes/q09_monthly_bill.png",
+    "actor": "penguin",
+    "options": [
+      {
+        "id": "A",
+        "text": "할인받은 금액을 보며 뿌듯해한다",
+        "scores": {
+          "hamster": 2
+        }
+      },
+      {
+        "id": "B",
+        "text": "예산표와 대조해 항목별로 점검",
+        "scores": {
+          "penguin": 2
+        }
+      },
+      {
+        "id": "C",
+        "text": "이번 달 적립된 포인트를 확인",
+        "scores": {
+          "rabbit": 2
+        }
+      },
+      {
+        "id": "D",
+        "text": "낯선 결제는 없는지 꼼꼼히 확인",
+        "scores": {
+          "bear": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "해외에서 결제해야 할 때!",
+    "scene": "assets/scenes/q10_overseas_payment.png",
+    "actor": "fox",
+    "options": [
+      {
+        "id": "A",
+        "text": "수수료가 가장 낮은 카드를 고른다",
+        "scores": {
+          "fox": 2
+        }
+      },
+      {
+        "id": "B",
+        "text": "현지 즉시 환급·할인되는 곳을 찾는다",
+        "scores": {
+          "hamster": 2
+        }
+      },
+      {
+        "id": "C",
+        "text": "폰 하나로 간편결제 끝",
+        "scores": {
+          "cat": 2
+        }
+      },
+      {
+        "id": "D",
+        "text": "해외 승인 알림과 한도를 안전하게 설정",
+        "scores": {
+          "bear": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "결제가 안 될 때, 어떡하지?",
+    "scene": "assets/scenes/q11_payment_failure.png",
+    "actor": "bear",
+    "options": [
+      {
+        "id": "A",
+        "text": "혜택 놓치지 않게 다른 카드로 재시도",
+        "scores": {
+          "fox": 2
+        }
+      },
+      {
+        "id": "B",
+        "text": "쿠폰이나 할인 조건 문제인지 확인",
+        "scores": {
+          "hamster": 2
+        }
+      },
+      {
+        "id": "C",
+        "text": "한도와 이번 달 사용 내역부터 점검",
+        "scores": {
+          "penguin": 2
+        }
+      },
+      {
+        "id": "D",
+        "text": "카드사에 보안·중복결제 문제인지 문의",
+        "scores": {
+          "bear": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "갖고 싶던 물건을 발견했다!",
+    "scene": "assets/scenes/q12_unexpected_money.png",
+    "actor": "cat",
+    "options": [
+      {
+        "id": "A",
+        "text": "더 싼 카드·쿠폰 조합을 검색",
+        "scores": {
+          "fox": 2
+        }
+      },
+      {
+        "id": "B",
+        "text": "예산에 넣을 수 있는지 먼저 계산",
+        "scores": {
+          "penguin": 2
+        }
+      },
+      {
+        "id": "C",
+        "text": "일단 간편결제로 후딱 지른다",
+        "scores": {
+          "cat": 2
+        }
+      },
+      {
+        "id": "D",
+        "text": "포인트를 모아서 사려고 미룬다",
+        "scores": {
+          "rabbit": 2
+        }
+      }
+    ]
+  }
+]
