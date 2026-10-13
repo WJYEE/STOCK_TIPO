@@ -9,6 +9,7 @@ import threading
 import urllib.request
 
 TABLE = "events"
+LAST_ERROR = [None]
 APP_VERSION = "1.0"
 
 
@@ -20,6 +21,13 @@ def load_config(secrets=None):
     url = cfg.get("url") or os.environ.get("SUPABASE_URL")
     key = cfg.get("anon_key") or os.environ.get("SUPABASE_ANON_KEY")
     return (url.rstrip("/"), key) if url and key else None
+
+
+def headers(key):
+    h = {"apikey": key, "Content-Type": "application/json", "Prefer": "return=minimal"}
+    if key.startswith("eyJ"):  # 예전 JWT 형식 anon 키만 Bearer로도 전송 (sb_publishable_ 키는 apikey 헤더만 사용)
+        h["Authorization"] = f"Bearer {key}"
+    return h
 
 
 def build_request(cfg, rec):
@@ -34,15 +42,15 @@ def build_request(cfg, rec):
     }
     return urllib.request.Request(
         f"{url}/rest/v1/{TABLE}", data=json.dumps(row).encode(), method="POST",
-        headers={"apikey": key, "Authorization": f"Bearer {key}",
-                 "Content-Type": "application/json", "Prefer": "return=minimal"})
+        headers=headers(key))
 
 
 def make_sink(cfg, opener=urllib.request.urlopen, background=True):
     def send(rec):
         try:
             opener(build_request(cfg, rec), timeout=3).close()
-        except Exception:
+        except Exception as e:
+            LAST_ERROR[0] = repr(e)  # 진단용(scripts/check_supabase.py 참고)
             pass  # 로깅 실패가 앱을 막으면 안 됨 # ponytail: 재시도/큐 없음, 필요 시 배치 전송 추가
 
     def sink(rec):
